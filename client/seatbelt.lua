@@ -286,4 +286,6 @@ function EjectFromVehicle()
     elseif GetEntityHealth(ped) ~= 0 then
         SetEntityHealth(ped, 0)
     end
+    --Agregado GENESEEItemDamage
+    TriggerServerEvent('GENESEEItemDamage:Accident')
 end
